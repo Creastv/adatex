@@ -1,0 +1,255 @@
+#page-content {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.page-contact__main .title {
+    font-size: 36px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+.page-contact__address {
+    display: flex;
+    align-items: start;
+    gap: 75px;
+}
+
+.page-contact__address img {
+    margin-top: 10px;
+}
+
+.page-contact__address address {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.page-contact__address p {
+    margin: 0;
+    padding: 0;
+}
+
+.page-contact__address .btn {
+    font-size: 14px;
+    padding: 0 94px 0 0;
+    box-shadow: none;
+    margin-top: 40px;
+}
+
+.page-contact__form .title {
+    margin-bottom: 20px;
+}
+
+.page-contact__form .wpcf7 {
+    margin-top: 15px;
+}
+
+.page-contact__form .btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 25px;
+}
+
+.page-contact__form .wpcf7-spinner {
+    position: absolute;
+    left: auto;
+    right: 275px;
+    bottom: 14px;
+}
+
+.page-contact__welcome {
+    position: relative;
+    padding: 60px 0;
+}
+
+.page-contact__welcome .container {
+    max-width: 1400px;
+}
+
+.page-contact__welcome .line {
+    width: 50%;
+    height: 1px;
+    background: #c09056;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.page-contact__welcome-content {
+    background: #fff;
+    position: relative;
+    z-index: 99;
+}
+
+.page-contact__welcome p {
+    font-family: 'Poppins', sans-serif;
+    color: #c09056;
+    padding-left: 45px;
+}
+
+.page-contact__team-state {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-contact__team-state .section-heading {
+    max-width: 320px;
+}
+
+.page-contact__team-state .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1120px;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    min-height: 115px;
+    position: relative;
+    margin-right: 47px;
+    padding: 15px 30px;
+}
+
+.page-contact__team-state .section-content:after {
+    content: "";
+    width: 47px;
+    height: 115px;
+    background: url(../../images/arrow-contact-bg.jpg);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -47px;
+}
+
+.page-contact__team-state .section-content > div {
+    display: flex;
+    align-items: center;
+}
+
+.page-contact__team-state .state {
+    margin-right: 30px;
+}
+
+.page-contact__team-state .state span {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.page-contact__team-state .state p {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.4;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.page-contact__team-state .mobile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-contact__team-state .mobile a {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.page-contact__team-state .mobile span {
+    font-weight: 300;
+}
+
+.page-contact__team-state img {
+    width: auto;
+    animation: heartbeat 2.5s infinite;
+    max-height: 40px;
+}
+
+.page-contact__team-item {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    -webkit-transition: all .75s linear;
+    transition: all .75s linear;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-contact__team-item:hover {
+    box-shadow: rgba(50, 50, 93, 0.55) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.page-contact__team-persons {
+    margin-top: 15px;
+}
+
+.page-contact__team-featured {
+    position: relative;
+}
+
+.page-contact__team-featured span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: #d7af60;
+    display: inline-block;
+    padding: 15px 20px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.page-contact__team-content {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 70%, rgba(0, 0, 0, 0) 100%);
+    position: relative;
+    margin: -100px -1px -1px -1px;
+    padding: 30px;
+}
+
+.page-contact__team-content .title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#main .page-contact__team-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#main .page-contact__team-content li {
+    display: flex;
+    padding: 10px 0;
+}
+
+#main .page-contact__team-content li div {
+    min-width: 25px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+#main .page-contact__team-content ul a {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#main .page-contact__team-content ul span {
+    font-weight: 300;
+}
+
+#main .page-contact__team-content img {
+    width: auto;
+    height: 21px;
+}
+
+.page-contact__team-content .btn {
+    font-size: 14px;
+    padding: 0 75px 0 0;
+    box-shadow: none;
+    margin-top: 30px;
+}

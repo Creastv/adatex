@@ -1,0 +1,70 @@
+#page-header:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .75);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#page-header {
+    height: 265px;
+    position: relative;
+}
+
+#page-content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#page-content ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#page-content ol {
+    list-style: decimal;
+}
+
+#page-content li {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.page-full__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-full__panel.left {
+    flex: 0 0 36.333333%;
+    max-width: 36.333333%;
+}
+
+.page-full__panel.right {
+    flex: 0 0 63.666667%;
+    max-width: 63.666667%;
+}
+
+.page-full__background {
+    height: 470px;
+    margin: 45px 30px 45px 0;
+    background-color: #181818;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-full__background img {
+    object-fit: cover;
+    width: 100%;
+    height: 470px;
+}
+
+.page-full__content {
+    width: 100%;
+    max-width: 1110px;
+    padding: 0 15px;
+}

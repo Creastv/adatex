@@ -1,0 +1,79 @@
+.section-contact {
+    color: #fff;
+    padding: 0;
+    margin: 60px 0;
+}
+
+.section-contact__wrapper {
+    width: 100%;
+    background: #000 url(../../images/contact-bg.png) center center no-repeat;
+    position: relative;
+    padding: 0 90px;
+}
+
+.section-contact__wrapper:before,
+.section-contact__wrapper:after {
+    content: "";
+    height: 210px;
+    position: absolute;
+    top: 0;
+}
+
+.section-contact__wrapper:before {
+    width: 90px;
+    background: url(../../images/contact-left-corner.jpg);
+    left: 0;
+}
+
+.section-contact__wrapper {
+    height: 210px;
+}
+
+.section-contact__wrapper:after {
+    width: 86px;
+    background: url(../../images/contact-right-corner.jpg);
+    right: 0;
+}
+
+.section-contact__wrapper .row {
+    height: 100%;
+}
+
+.section-contact__meet {
+    text-align: right;
+    padding-right: 30px;
+}
+
+.section-contact__meet span {
+    font-size: 18px;
+}
+
+.section-contact__meet p {
+    font-size: 48px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.section-contact__phone {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.section-contact__phone img {
+    margin-right: 65px;
+    animation: heartbeat 2.5s infinite;
+}
+
+.section-contact__phone a {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.section-contact__phone a span {
+    font-weight: 400;
+}
