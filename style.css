@@ -247,13 +247,15 @@ h6 {
     width: 100%;
     z-index: 999;
     justify-content: space-between;
-    padding: 45px 30px 45px 126px;
+    padding: 45px 30px 45px 30px;
 }
 
 .header__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+    z-index: 99;
 }
 
 .header__navigation {
@@ -271,6 +273,8 @@ h6 {
 .header__navigation--contact a {
     font-size: 18px;
     color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .header__navigation--contact img {
@@ -282,17 +286,14 @@ h6 {
     align-items: center;
     gap: 24px;
     margin-left: 25px;
-    margin-right: 180px
 }
 
 .header__navigation--hamburger {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 50px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    z-index: 99;
+    margin-left: 70px;
 }
 
 .header__navigation--hamburger i {
@@ -300,6 +301,12 @@ h6 {
     height: 37px;
     background: url(assets/images/icons/menu-icon.png);
     display: block;
+}
+
+.header__navigation--hamburger.open i {
+    width: 28px;
+    height: 27px;
+    background: url(assets/images/icons/close.png);
 }
 
 .header__navigation--hamburger span {
@@ -311,16 +318,14 @@ h6 {
 }
 
 .header__navigation--close {
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    z-index: 999;
     display: flex;
     align-items: center;
     gap: 15px;
     cursor: pointer;
 }
-
+.header__navigation--logo img{
+    max-width: 208px;
+}
 .header__navigation--close span {
     font-size: 18px;
     font-weight: 700;
@@ -387,7 +392,7 @@ h6 {
     background: #181818;
     z-index: 999;
     border-bottom: 1px solid #262626;
-    padding: 15px 30px 15px 126px
+    padding: 15px 30px 15px 30px;
 }
 
 .logged-in #header,
@@ -423,12 +428,20 @@ body.open {
 .header__navigation--logo {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 30px ;
+    margin-bottom: 120px;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+   /* padding: 43px 30px 15px 227px; */
 }
+
 
 .header__navigation--details {
     display: flex;
-    margin-top: 12vh;
+    margin-top: 20vh;
 }
 
 .header__navigation--details > div {
@@ -438,6 +451,8 @@ body.open {
 
 .header__navigation--links {
     border-right: 1px solid #d6ae5e;
+    border-left: 1px solid #d6ae5e;
+    margin-left: -1px;
 }
 
 .header__navigation--links li {
@@ -522,6 +537,75 @@ body.open {
     100% { transform: translateY(-10px); }
 }
 
+
+
+@media only screen and (max-width: 1200px){
+    #header, #header.sticky {
+        /* padding: 15px 15px 15px 126px; */
+    }
+    .header__navigation--contact{
+        gap: 15px;
+    }
+    .header__navigation--contact a{
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+    }
+    .header__navigation--group .group{
+        flex-wrap: wrap;
+            gap: 10px;
+    }
+    .header__navigation--group .group a{
+        width: 100%;
+    }
+    .header__navigation--hamburger span {
+    font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    #header, #header.sticky {
+        padding: 15px;
+    }
+    .header__navigation--social a{
+        display: none;
+    }
+  
+    .header__navigation--links{
+        border: none!important;
+    }
+    .header__navigation--details{
+        flex-wrap: wrap;
+    }
+     .header__navigation--details > div:nth-child(1), .header__navigation--details > div:nth-child(2), .header__navigation--details > div{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .header__navigation--contact a{
+        font-size: 11px;
+    }
+    
+    .header__navigation--details{
+        height: calc(90vh - 50px);
+        overflow: auto;
+        margin-top: 120px;
+        padding-bottom: 50px;
+    }
+
+}
+@media only screen and (max-width: 700px){
+    
+    .header__navigation--contact{
+        display: none;
+    }
+    .header__navigation--details > div:nth-child(1), .header__navigation--details > div:nth-child(2), .header__navigation--details > div{
+        flex: 100%;
+        max-width: 100%;
+    }
+    #page-header {
+        height: 144px;
+    }
+}
 
 /* Footer */
 #footer {

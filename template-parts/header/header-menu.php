@@ -1,24 +1,7 @@
 <?php $menu = get_field( 'menu', 'option' ); ?>
-<div class="header__navigation--hamburger">
-    <i></i>
-    <span>Menu</span>
-</div>
 
 <div class="header__navigation--overlay">
     <div class="container">
-        <div class="header__navigation--logo">
-            <div>
-                <a href="<?php site_url(); ?>" title="<?php bloginfo( 'description' ); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adatex-large-logo.png"
-                         width="409" height="88" alt="Adatex Logo">
-                </a>
-            </div>
-            <div class="header__navigation--close">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/close.png" alt="Zamknij menu"
-                     width="28" height="27">
-                <span>Zamknij menu</span>
-            </div>
-        </div>
         <div class="header__navigation--details">
             <div class="header__navigation--links">
 				<?php

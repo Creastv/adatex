@@ -1,9 +1,18 @@
 jQuery(document).ready(function ($) {
     "use strict";
-
+    let flag = false;
     $('.header__navigation--hamburger').click(function(){
         $('body').toggleClass('open');
         $('.header__navigation--overlay').toggleClass('open');
+         $('.header__navigation--hamburger').toggleClass('open');
+        console.log(flag)
+        if(flag){
+             $('.header__navigation--hamburger span').text('Menu');
+            flag = false;
+        } else {
+            $('.header__navigation--hamburger span').text('Zamknij menu');
+            flag = true;
+        }
     });
 
     $('.header__navigation--close').click(function(){
