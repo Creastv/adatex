@@ -605,7 +605,7 @@ body.open {
         display: none;
     }
     .header__navigation--details > div:nth-child(1), .header__navigation--details > div:nth-child(2), .header__navigation--details > div{
-        flex: 100%;
+        flex: 100%; 
         max-width: 100%;
     }
     #page-header {
