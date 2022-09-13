@@ -1,13 +1,13 @@
 <?php get_template_part( 'template-parts/section/section', 'form' ); ?>
 <footer id="footer">
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-sm-6">
                 <div class="footer__copyright">
                     <p>All Rights Reserved Adatex Sp. z o.o.</p>
                 </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <div class="footer__design">
                     <p>Projekt i realizacja:</p>
                     <a href="https://regalestate.pl/" title="RegalEstate" target="_blank">

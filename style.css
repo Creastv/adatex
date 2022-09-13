@@ -618,11 +618,11 @@ body.open {
 .footer__design {
     display: flex;
     align-items: flex-start;
-    float: right;
+    justify-content: flex-end;
 }
 
 .footer__design img {
-    margin-left: 15px;
+    padding:0 10px;
 }
 
 @media (max-width: 1367px) {}
@@ -756,7 +756,16 @@ body.open {
 @media (max-width: 768px) {}
 
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+    .footer__copyright{
+        text-align: center;
+    }
+    .footer__design {
+        display: flex;
+        justify-content: center!important;
+        float:none!important
+    }
+}
 
 .aligncenter,
 div.aligncenter {

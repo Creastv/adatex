@@ -1,4 +1,5 @@
 .section-form {
+    overflow-x: hidden;
     display: flex;
     flex-wrap: wrap;
     height: 740px;
@@ -87,7 +88,7 @@
 .section-form__details--state .group {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
 }
 
 .section-form__details--state .group a {
@@ -112,10 +113,10 @@
 }
 
 .section-form__meta ul {
+    padding: 0 50px;
     display: flex;
-    gap: 130px;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    width: 100%;
 }
 
 .section-form__meta li {
@@ -299,4 +300,135 @@ span.wpcf7-list-item {
 .section-form__menu .current_page_item a {
     color: #bd9713;
     text-decoration: underline;
+}
+@media only screen and (max-width: 1400px){
+    .section-form__details--state .group{
+        gap: 15px;
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    .section-form__details--state .group{
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .section-form__details--state .group a{
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .section-form__cform{
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .section-form__logo{
+        padding: 50px 0 35px 30px;
+    }
+    .section-form__menus .col-sm
+    .section-form__cform{
+        margin-top: 0px;
+    }
+    .section-form__contact {
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* height: 100%;
+        background: #dab263 url(../../images/form-contact-bg.png) no-repeat center right;
+        background-size: cover; */
+    }
+
+    .section-form__navigation {
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* height: 100%;
+        background: #000000 url(../../images/form-navigation-bg.png) no-repeat left top 115px;
+        background-size: cover; */
+    }
+    .section-form{
+        height: inherit;
+    }
+    .section-form__contact{
+        padding: 50px 20px;
+        order: 1;
+    }
+    .section-form__details{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        padding: 15px 45px 15px 55px;
+    }
+
+    .section-form__details .section-heading,
+    .section-form__details .section-form__details--address,
+    .section-form__details .section-form__details--state {
+        width: 33.333%;
+    }
+    
+    
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .section-form__details .section-heading{
+        width: 100%;
+    }
+    .section-form__details .section-form__details--address{}
+    .section-form__details .section-form__details--state{}
+    
+    .section-form__meta a {
+       font-size: 18px;
+    }
+    .section-form__cform{
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section-form__cform{
+        max-width: 100%;
+        margin: 0;
+    }
+    .section-form__details{
+        padding: 15px;
+    }
+    .section-form__details:before{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .section-form__meta{
+        height: inherit;
+        padding: 30px 15px;
+    }
+      .section-form__meta ul{
+       flex-wrap: wrap;
+       justify-content: center;
+       padding: 0;
+    }
+    .section-form__meta ul li{
+       width: 100%;
+       margin-bottom: 15px;
+       text-align: center;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .section-form__meta ul li a{
+        font-size: 21px;
+        text-align: center;
+    }
+    .section-form__details .section-heading{
+        width: 100%;
+    }
+    .section-form__details .section-form__details--address{
+        width: 100%;
+    }
+    .section-form__details .section-form__details--state{
+        width: 100%;
+    }
+
 }

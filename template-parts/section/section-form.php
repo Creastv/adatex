@@ -58,7 +58,7 @@
         </div>
         <div class="section-form__menus">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="section-form__cform">
                         <div class="section-heading">
                             <p class="title"><span>Masz pytania?</span> Napisz do nas</p>
@@ -66,7 +66,7 @@
 						<?php echo do_shortcode( '[contact-form-7 id="3944" title="Formularz kontaktowy"]' ); ?>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-md-6">
                     <div class="section-form__logo">
                         <a href="<?php site_url(); ?>" title="<?php bloginfo( 'description' ); ?>">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adatex-medium-logo.png"
