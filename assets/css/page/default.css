@@ -51,10 +51,10 @@
 .page-full__background {
     height: 470px;
     margin: 45px 30px 45px 0;
-    background-color: #181818;
-    background-position: center right;
+    background-size: contain;
+    background-position: center top;
+    background-color: #fff;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .page-full__background img {
@@ -67,4 +67,44 @@
     width: 100%;
     max-width: 1110px;
     padding: 0 15px;
+}
+
+
+@media (max-width: 1200px) {
+    .page-full__panel.left{
+        flex: 0 0 40%;
+        max-width:40%;
+    }
+    .page-full__panel.right{
+        flex: 0 0 60%;
+        max-width:60%;
+    }
+ 
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {
+    .page-full__wrapper{
+        flex-wrap: wrap;
+    }
+    .page-full__panel.left{
+        flex: 0 0 40%;
+        max-width:40%;
+    }
+    .page-full__panel.right{
+        flex: 0 0 100%;
+        max-width:100%;
+    }
+    .page-full__background{
+        margin: 0;
+        height: 150px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
 }

@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
              $('.header__navigation--hamburger span').text('Menu');
             flag = false;
         } else {
-            $('.header__navigation--hamburger span').text('Zamknij menu');
+            $('.header__navigation--hamburger span').text('Zamknij');
             flag = true;
         }
     });

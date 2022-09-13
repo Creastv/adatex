@@ -403,6 +403,7 @@ span.wpcf7-list-item {
     .section-form__meta{
         height: inherit;
         padding: 30px 15px;
+        display: none!important;
     }
       .section-form__meta ul{
        flex-wrap: wrap;

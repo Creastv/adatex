@@ -24,12 +24,12 @@ $cooperation = get_field( 'cooperation' );
                     </div>
                     <div class="section-content">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-lg-6">
                                 <div class="page-full__article">
 									<?php echo $cooperation['description']; ?>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-lg-6">
                                 <div class="page-full__contact">
 									<?php echo $cooperation['contact']; ?>
                                 </div>
