@@ -12,7 +12,7 @@ $sales   = get_field( 'sales' );
         <div class="page-contact__main">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="page-contact__address">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adatex-slogan.png"
                                  alt="Adatex slogan" width="157" height="109" data-aos="fade-right"
@@ -29,7 +29,7 @@ $sales   = get_field( 'sales' );
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                         <div class="page-contact__form">
                             <p class="title">Chcesz, żebyśmy oddzwonili lub napisali?</p>
                             <p class="subtitle">Wpisz numer telefonu oraz / lub adres email - odezwiemy się w przeciągu
@@ -75,7 +75,7 @@ $sales   = get_field( 'sales' );
                 <div class="page-contact__team-persons">
                     <div class="row">
 						<?php foreach ( $sales['personels'] as $person ): ?>
-                            <div class="col-12 col-sm-3">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
                                 <div class="page-contact__team-item">
                                     <div class="page-contact__team-featured">
                                         <span class="state">woj. <?php echo $person['state'] === "1" ? 'śląskie' : 'mazowieckie'; ?></span>
@@ -100,7 +100,7 @@ $sales   = get_field( 'sales' );
                                                 <a href="mailto:<?php echo $person['email']; ?>" title="Napisz do nas: biuro@adatex.pl"><?php echo $person['email']; ?></a>
                                             </li>
                                         </ul>
-                                        <a href="mailto:<?php echo $person['email']; ?>; ?>" title="Napisz do nas: biuro@adatex.pl" class="btn">kliknij, aby napisać wiadomość</a>
+                                        <a href="mailto:<?php echo $person['email']; ?>" title="Napisz do nas: biuro@adatex.pl" class="btn">kliknij, aby napisać wiadomość</a>
                                     </div>
                                 </div>
                             </div>
