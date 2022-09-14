@@ -1,3 +1,6 @@
+setTimeout(function () {
+  document.querySelector(".preloader").classList.add("preloader-loaded");
+}, 90);
 jQuery(document).ready(function ($) {
     "use strict";
     let flag = false;

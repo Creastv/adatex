@@ -34,4 +34,6 @@ $slides  = get_field( 'slides' );
             <span>przewiń do dołu</span>
         </a>
     </div>
+<?php else : ?> 
+   <?php get_template_part('template-parts/section/section', 'header'); ?>
 <?php endif; ?>

@@ -21,12 +21,14 @@ $description = get_field( 'locationDescription' );
                     <div class="section-location__points">
                         <div class="row">
 							<?php foreach ( $points as $point ): ?>
+                                <?php if( $point['icon']) { ?>
                                 <div class="col-4 text-center ">
 									<div class="item">
 										<?php echo wp_get_attachment_image( $point['icon'], 'full' ); ?>
                                         <p><?php echo $point['name']; ?></p>
                                     </div>
                                 </div>
+                                <?php } ?>
 							<?php endforeach; ?>
                         </div>
                     </div>
@@ -70,8 +72,11 @@ $description = get_field( 'locationDescription' );
                 },
 				<?php foreach($points as $point): ?>
                 {
+                    <?php if( $point['icon']) { ?>
                     position: new google.maps.LatLng(<?php echo $point['point']['lat']; ?>, <?php echo $point['point']['lng']; ?>),
+                
                     icon: '<?php echo wp_get_attachment_image_url( $point['icon'], 'full' ); ?>'
+                    <?php } ?>
                 },
 				<?php endforeach; ?>
             ];

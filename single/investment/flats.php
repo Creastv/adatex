@@ -4,6 +4,7 @@
     <div class="section section-flats">
         <div class="section-flats__panel">
             <div class="section-flats__finder">
+				<?php if (  ! empty( $flats['image'] ) ) : ?> 
                 <div class="section-heading has-line">
                     <i class="line"
                        data-aos="fade-down"
@@ -11,20 +12,23 @@
                        data-aos-duration="1000"
                        data-aos-easing="ease-in-sine"
                     ></i>
-					<?php if ( ! empty( $flats['title'] ) ): ?>
+					    <?php if(! empty( $flats['title'] )) : ?>
                         <p class="title"><?php echo $flats['title']; ?></p>
-					<?php endif; ?>
-					<?php if ( ! is_page_template( 'archive-investment.php' ) ): ?>
-                        <a href="#flats-table" title="kliknij, aby przejść do tabeli" class="btn">
-                            kliknij, aby przejść do tabeli
-                        </a>
-					<?php endif; ?>
+						<?php endif; ?>
+						<?php if ( ! is_page_template( 'archive-investment.php' ) ): ?>
+							<a href="#flats-table" title="kliknij, aby przejść do tabeli" class="btn">
+								kliknij, aby przejść do tabeli
+							</a>
+						<?php endif; ?>
+					
                 </div>
+				<?php endif; ?>
             </div>
-
+            <?php if($flats['image']) { ?>
             <img id="InvestmentMap" src="<?php echo wp_get_attachment_image_url( $flats['image'], 'full' ); ?>"
+			<?php } ?>
                  usemap="#image-map">
-
+            <?php if($flats['coordinates']) { ?>
             <map name="image-map">
 				<?php
 				foreach ( $flats['coordinates'] as $c ):
@@ -80,6 +84,7 @@
                     >
 				<?php endforeach; ?>
             </map>
+			<?php } ?>
             <div class="tooltip-content"></div>
         </div>
     </div>

@@ -4,7 +4,12 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
+<div class="preloader">
+    <div class="logo-pre">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/adatex-logo.png"
+		     alt="Adatex Logo">
+    </div>
+</div>
 <header id="header">
     <div class="container">
         <div class="header__wrapper">

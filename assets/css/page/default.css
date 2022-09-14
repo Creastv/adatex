@@ -12,7 +12,17 @@
     height: 265px;
     position: relative;
 }
-
+#page-header #title-page{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+#page-header #title-page h1{
+    color:#fff;
+    font-size: 36px;
+    font-family: 'Playfair Display', sans-serif;
+    margin-bottom: 50px;
+}
 #page-content {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -69,6 +79,9 @@
     padding: 0 15px;
 }
 
+.single-post #page-content img{
+padding: 10px;
+}
 
 @media (max-width: 1200px) {
     .page-full__panel.left{
@@ -101,6 +114,9 @@
     .page-full__background{
         margin: 0;
         height: 150px;
+    }
+    #page-header #title-page h1{
+        margin-bottom: -10px;
     }
 
 }
