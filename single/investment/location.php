@@ -21,7 +21,7 @@ $description = get_field( 'locationDescription' );
                     <div class="section-location__points">
                         <div class="row">
 							<?php foreach ( $points as $point ): ?>
-                                <div class="col-6 col-sm-4">
+                                <div class="col-4 text-center ">
 									<div class="item">
 										<?php echo wp_get_attachment_image( $point['icon'], 'full' ); ?>
                                         <p><?php echo $point['name']; ?></p>

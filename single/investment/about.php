@@ -4,7 +4,7 @@
     <div class="section section-about">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-6 col-lg-5 col-xl-4">
                     <div class="section-about__finder">
                         <div class="section-heading">
                             <p class="title"><?php echo $investment['panelTitle']; ?></p>
@@ -29,10 +29,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-md-6 col-lg-7 col-xl-8">
                     <div class="section-about__content">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-12 col-sm-12 col-lg-5">
                                 <div class="section-about__description">
                                     <p class="title"><?php echo $investment['contentTitle']; ?></p>
 									<?php echo $investment['contentDescription']; ?>
@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-12 col-sm-12 col-lg-7">
                                 <div class="section-about__extended">
 									<?php echo $investment['contentExtended']; ?>
                                 </div>
