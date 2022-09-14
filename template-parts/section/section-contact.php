@@ -4,13 +4,13 @@
     <div class="container">
         <div class="section-contact__wrapper">
             <div class="row align-items-center">
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-12 col-md-6">
                     <div class="section-contact__meet">
                         <span><?php echo $contact['superscription']; ?></span>
                         <p><?php echo $contact['title']; ?></p>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-12 col-sm-12 col-md-6">
                     <div class="section-contact__phone">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/mobile-contact-icon.png"
                              alt="Mobile Icon" width="45" height="69">

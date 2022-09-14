@@ -14,9 +14,9 @@ $posts = get_posts( $args );
 ?>
 <div class="section section-investment">
     <div class="section-investment__panel left">
-        <div class="section-investment__wrapper">
+        <div class="container section-investment__wrapper">
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-xl-6 ">
                     <div class="section-investment__article">
                         <div class="section-heading">
                             <p class="title"><?php echo $investment['title']; ?></p>
@@ -31,7 +31,7 @@ $posts = get_posts( $args );
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-xl-6 ">
                     <div class="section-investment__nav">
                         <div class="slider-investment-nav"></div>
                     </div>

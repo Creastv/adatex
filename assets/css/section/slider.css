@@ -99,3 +99,9 @@
 .section-slider .owl-dot.active:last-of-type button:after {
     display: none;
 }
+@media (max-height: 700px) {
+    
+}
+@media (max-width: 576px) {
+    
+}

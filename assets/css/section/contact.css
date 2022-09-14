@@ -69,11 +69,109 @@
 }
 
 .section-contact__phone a {
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 700;
     color: #fff;
 }
 
 .section-contact__phone a span {
     font-weight: 400;
+}
+
+
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1350px) {
+
+}
+@media (max-width: 1300px) {
+    .section-contact__meet p {
+        font-size: 41px;
+    }
+    .section-contact__phone a {
+        font-size: 46px;
+    }
+}
+@media (max-width: 1300px) {
+    .section-contact__meet p {
+        font-size: 31px;
+    }
+    .section-contact__phone a {
+        font-size: 31px;
+    }
+    .section-contact__phone img {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 992px) {
+    .section-contact__wrapper{
+        background-size: 80%;
+    }
+    .section-contact__meet{
+        padding-right: 0;
+    }
+    .section-contact__phone{
+        padding-left: 0;
+    }
+    .section-contact__phone img {
+        margin-right: 10px;
+    }
+    .section-contact__phone a {
+       font-size: 21px;
+    }
+    .section-contact__meet p {
+       font-size: 22px;
+    }
+    .section-contact__meet span {
+        font-size: 16px;
+    }
+  
+}
+@media (max-width: 768px) {
+    .section-contact__meet {
+    text-align: center;
+    }
+    .section-contact__phone {
+        padding-left: 0;
+        justify-content: center;
+    }
+    .section-contact__wrapper {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-contact__wrapper{
+        height: initial;
+        background-size: cover;
+        padding: 20px;
+    }
+    .section-contact__wrapper:after, .section-contact__wrapper:before {
+        display: none;
+    }
+    .section-contact__meet {
+        padding-right: 0;
+        text-align: center;
+    }
+    .section-contact__phone{
+        display: flex;
+        align-items: center;
+        /* padding-left: 30px; */
+        justify-content: center;
+        padding: 30px 0;
+    }
+    .section-contact__phone img {
+        margin-right: 27px;
+        animation: heartbeat 2.5s infinite;
+        width: 24px;
+    }
+    .section-contact__phone a {
+        font-size: 24px;
+    }
+    
+    .section-contact__meet p {
+       font-size: 31px;
+    }
 }

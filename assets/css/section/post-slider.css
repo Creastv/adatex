@@ -103,3 +103,15 @@
 .section-post-slider__posts .slide__heading .btn:hover {
     background-size: 23px 16px;
 }
+
+@media (max-width: 576px) {
+   .section-post-slider__article{
+    padding-top: 0px;
+   }
+   .section-post-slider__posts .owl-stage-outer{
+    padding-left: 7.5px;
+   }
+   .section-post-slider__article .section-heading {
+        padding-bottom: 15px;
+    }
+}
