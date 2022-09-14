@@ -449,6 +449,9 @@
     min-height: 750px!important;
 }
 
+.home #header .header__logo{
+    padding-left: 50px;
+}
 
 @media (max-width: 1400px) {
     .section-about__trust .area span {
@@ -456,7 +459,7 @@
     }
 }
 @media (max-height: 750px) {
-    
+
 }
 @media (max-width: 1300px) {
 }
@@ -607,10 +610,12 @@
         order:1;
     }
     .slider-main-nav{
-        display: none;
+        /* display: none; */
+            width: 40px!important;
     }
     .section-slider .slide {
         padding: 0px;
+
     }
     .section-slider .slide__heading h2 {
         font-size: 21px;
@@ -625,5 +630,14 @@
     .section-slider .slide__attributes--item {
         margin-bottom: 10px;
     }
-
+    .section-slider .slide{
+        padding-left: 60px;
+    }
+    .home #header .header__logo{
+        padding-left: 30px;
+    }
+     .home #header.sticky .header__logo{
+        padding-left: 0px;
+    }
+    
 }
