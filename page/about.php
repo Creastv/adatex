@@ -57,12 +57,12 @@ $banner   = get_field( 'banner' );
             <div class="page-about__experience">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-12 col-sm-12 col-md-4">
                             <div class="section-heading">
                                 <p class="title"><?php echo $progress['title']; ?></p>
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-12 col-sm-12 col-md-8">
                             <div class="section-content">
                                 <div class="page-about__logos">
 									<?php foreach ( $progress['investments'] as $investment ): ?>
@@ -80,16 +80,16 @@ $banner   = get_field( 'banner' );
             </div>
 		<?php endif; ?>
 
-		<?php if ( ! empty( $finished ) ): ?>
+		 <?php if ( ! empty( $finished ) ): ?>
             <div class="page-about__experience">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-12 col-sm-12 col-md-4">
                             <div class="section-heading">
                                 <p class="title">Inwestycje zrealizowane</p>
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-12 col-sm-12 col-md-8">
                             <div class="section-content">
                                 <div class="section-content">
                                     <div class="page-about__logos">

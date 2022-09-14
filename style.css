@@ -780,6 +780,9 @@ body.open {
         justify-content: center!important;
         float:none!important
     }
+    .section-heading{
+       max-width: 100%!important;
+    }
     .section-heading .title {
     font-size: 28px;
     }
