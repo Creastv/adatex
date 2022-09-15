@@ -778,8 +778,8 @@
     height: 110px;
 }
 
-.single-investment #header .header__logo{
-    padding-left: 50px;
+.has-slider .header__logo{
+    padding-left: 80px;
 }
 
 .section-slider .slide{
@@ -920,7 +920,7 @@
     .section-table .section-heading{
         flex-wrap: wrap;
     }
-    .single-investment #header .header__logo{
+    .has-slider .header__logo{
         padding-left: 80px;
     }
 }
@@ -933,10 +933,10 @@
         padding-left: 30px;
     }
 
-    .single-investment #header .header__logo{
+    .has-slider  .header__logo{
         padding-left: 30px;
     }
-     .single-investment #header.sticky .header__logo{
+     .has-slider.sticky .header__logo{
         padding-left: 0px;
     }
      .section-slider .slide{

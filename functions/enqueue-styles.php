@@ -59,7 +59,7 @@ function enqueue_styles() {
 		wp_enqueue_style( 'adatex-page-contact' );
 	}
 
-	if ( is_category() || is_home() || is_tag() ) {
+	if ( is_category() || is_home() || is_tag() || is_post_type('investment') || is_post_type('galleries') ) {
 		wp_enqueue_style( 'adatex-archive-category' );
 	}
 

@@ -1,11 +1,34 @@
 <?php get_header(); ?>
 <section id="main" class="category">
     <?php get_template_part('template-parts/section/section', 'header');?>
-<div id="page-content" class="category section">
+<div id="page-content" class="section">
     <div class="container">
         <div class="row">
             <?php if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
+                <?php if(is_post_type('investment') || is_post_type('galleries')) { ?>
+                    <div class="col-md-6 item item-inw">
+                        <div class="post__panel">
+                            <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+                                <div class="post__background"
+                                     style="background-image: url(<?php if(get_the_post_thumbnail_url()) {  echo get_the_post_thumbnail_url( get_the_ID(), 'category-post-thumbnail' ); } else { echo  get_template_directory_uri() . "/assets/images/thumbnail.png"; }; ?> );">
+                                    <div class="post__heading"> 
+                         
+                                        <div class="title-wraper">
+                                            <p class="title"><?php the_title(); ?></p>
+                                            <?php $adrress = get_field('details');
+                                            if( $adrress ) { ?>
+                                               <span><?php echo $adrress['address']; ?></span>
+                                            <?php } ?>
+                                        </div>
+                                        <span class="btn">Zobacz Wiecej</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                <?php } else { ?>
                     <div class="col-md-6 item">
                         <div class="post__panel">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
@@ -21,6 +44,7 @@
                             </a>
                         </div>
                     </div>
+                <?php } ?>
                 <?php endwhile; ?>
                 <?php if(paginate_links()) { ?>
                     <div class="container">

@@ -143,7 +143,7 @@ function cpt_investment() {
 		'show_ui'            => true,
 		'show_in_menu'       => true,
 		'query_var'          => true,
-		'rewrite'            => array( 'slug' => 'inwestycja' ),
+		'rewrite'            => array( 'slug' => 'inwestycje' ),
 		'capability_type'    => 'post',
 		'has_archive'        => true,
 		'hierarchical'       => true,

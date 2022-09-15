@@ -7,6 +7,10 @@
                 <?php if ( is_category() ) : single_cat_title();						
                     elseif (is_page() ) :
                         the_title();
+                     elseif (is_singular('investment') && is_post_type('investment')) :
+                            the_title(); 
+                    elseif (is_post_type('investment')) :
+                          _e( 'Inwestycje w sprzedaży', 'cr' );   
                     elseif (is_singular('galleries') ) : 
                         _e( 'Zrealizowane inwestycje', 'cr' );
                     elseif (is_404() ) :

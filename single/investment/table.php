@@ -98,7 +98,8 @@ $args = array(
 						$posts->the_post();
 						?>
                         <tr>
-                            <td class="sorting"><?php echo get_field( 'name' ) ?: '---'; ?></td>
+                            <td class="sorting"> 
+                            <?php echo get_field( 'name' ) ?: '---'; ?></td>
                             <td class="sorting"><?php echo get_field( 'building' ) ?: '---'; ?></td>
                             <td class="sorting"><?php echo get_field( 'floor' ) == "0" ? 'Parter' : get_field( 'floor' ) ?></td>
                             <td class="sorting"><?php echo get_field( 'rooms' ) ?: '---'; ?></td>
@@ -110,7 +111,7 @@ $args = array(
                             <td><?php echo get_field( 'sold_status' ) == "0" && get_field( 'card_link' ) ? '<a data-fancybox data-type="pdf" href="' . get_field( 'card_link' )['url'] . '">Pobierz PDF</a>' : '---'; ?></td>
                             <!-- <td><a data-fancybox="dialog" data-src="#dialog-content" href="#" class="btn">Zapytaj o
                                     mieszkanie</a></td> -->
-                            <td><a href="#" data-inv="<?php echo $relation->name; ?>" data-name="<?php echo get_field( 'name' ); ?>" class="btn btn-modal">Zapytaj o
+                            <td><a href="#" onclick="test(event, '<?php the_title(); ?>', '<?php echo get_field( 'name' ); ?>')"  class="btn btn-modal">Zapytaj o
                                     mieszkanie</a></td>        
                         </tr>
 					<?php endwhile;
@@ -133,3 +134,18 @@ $args = array(
     </div>
 <?php endif; ?>
 
+<script>
+    function test(event, inw, name) {
+        // event.preventDefault();
+        console.log(name, inw)
+        document.querySelector('#modal-form-table').classList.add('open-modal');
+        document.querySelector('.nr-lok').textContent = name;
+        document.querySelector('.nazwa-inw').textContent = inw;
+        document.querySelector('[name="nazwa-lokalu"]').value = name;
+        document.querySelector('[name="nazwa-inwestycji"]').value = inw;
+
+    }
+    document.querySelector('.close-modal').addEventListener('click', function(event){
+       document.querySelector('#modal-form-table').classList.remove('open-modal');
+    })
+</script>

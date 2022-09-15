@@ -68,6 +68,7 @@
 }
 
 
+
 /* Galeria */
 
  .gallery-item{
@@ -75,6 +76,46 @@ padding: 10px!important;
 }
  .gallery-item img{
 border:none!important;
+}
+
+/* Inwestycje */
+
+.item-inw .post__background{
+   position: relative;
+
+}
+
+.item-inw .post__background .post__heading{
+   position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+   background: rgb(255,255,255);
+    background: linear-gradient(38deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 63%);
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.item-inw .post__background .post__heading .title-wraper{
+    padding: 20px;
+    background-color: #d7af60;
+    width: 45%;
+    
+}
+.item-inw .post__background .post__heading .title-wraper p{
+    font-size: 28px;
+    line-height: 1.2;
+    color:#000;
+}
+.item-inw .post__background .post__heading .title-wraper span{
+    font-size: 14px;
+    color:#000;
+}
+
+.item-inw .post__background .post__heading .btn{
+        padding: 17px 94px 17px 40px;
+        margin-bottom: 30px;
 }
 
 @media (max-width: 1300px) {
@@ -85,11 +126,22 @@ border:none!important;
 }
 
 @media (max-width: 992px) {
-  
+  .item-inw .post__background .post__heading .title-wraper p{
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
+    .item-inw .post__background .post__heading .title-wraper p{
+    font-size: 28px;
 
+    }
+    .item-inw .post__background .post__heading .title-wraper{
+        width: 100%;
+    }
+    .item-inw .post__background .post__heading .btn{
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {

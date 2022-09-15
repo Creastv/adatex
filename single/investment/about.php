@@ -1,10 +1,11 @@
 <?php $investment = get_field( 'investments' ); ?>
 
 <?php if ( ! empty( $investment ) ): ?>
+     <?php if($investment['panelTitle']) { ?>
     <div class="section section-about">
         <div class="container">
             <div class="row">
-                <?php if($investment['panelTitle']) { ?>
+               
                 <div class="col-md-6 col-lg-5 col-xl-4">
                     <div class="section-about__finder">
                         <?php if($investment['panelTitle']) { ?>
@@ -31,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <?php } ?>
+               
                 <?php if($investment['contentDescription']) { ?>
                 <div class="col-md-6 col-lg-7 col-xl-8">
                     <div class="section-about__content">
@@ -68,4 +69,5 @@
             </div>
         </div>
     </div>
+    <?php } ?>
 <?php endif; ?>

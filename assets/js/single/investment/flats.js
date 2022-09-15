@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
         "pageLength": 15,
         "iDisplayLength": 15,
         "initComplete": function () {
-            formModal();
+            // formModal();
         },
         columns: [
             {data: 'name', className: "flat_name"},
@@ -123,24 +123,7 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    const formModal = function(){
-        const btns = document.querySelectorAll('.btn-modal');
-        const modalForm = document.querySelector('#modal-form-table');
-        const modalFormClose = document.querySelector('.close-modal');
-        for(let i = 0; i < btns.length; i++ ){
-            btns[i].addEventListener('click', function(event){
-                event.preventDefault();
-                modalForm.classList.add('open-modal');
-                document.querySelector('.nr-lok').textContent = btns[i].dataset.name
-                document.querySelector('.nazwa-inw').textContent = btns[i].dataset.inv
-                document.querySelector('[name="nazwa-lokalu"]').value = 'test';
-                document.querySelector('[name="nazwa-inwestycji"]').value = btns[i].dataset.inv;
-            })
-        };
-        modalFormClose.addEventListener('click', function(event){
-            modalForm.classList.remove('open-modal');
-        });
-    }
+   
 
     
 });

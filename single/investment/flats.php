@@ -25,9 +25,9 @@
 				<?php endif; ?>
             </div>
             <?php if($flats['image']) { ?>
-            <img id="InvestmentMap" src="<?php echo wp_get_attachment_image_url( $flats['image'], 'full' ); ?>"
+            <img id="InvestmentMap" src="<?php echo wp_get_attachment_image_url( $flats['image'], 'full' ); ?>"  usemap="#image-map">
 			<?php } ?>
-                 usemap="#image-map">
+               
             <?php if($flats['coordinates']) { ?>
             <map name="image-map">
 				<?php

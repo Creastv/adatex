@@ -10,7 +10,12 @@
 		     alt="Adatex Logo">
     </div>
 </div>
-<header id="header">
+<?php 
+$slides  = get_field( 'slides' );
+if($slides){
+$classLogo = "has-slider";
+}?>
+<header id="header" class="<?php echo $classLogo; ?>">
     <div class="container">
         <div class="header__wrapper">
 			<?php get_template_part( 'template-parts/header/header', 'logo' ); ?>
