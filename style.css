@@ -559,6 +559,34 @@ body.open {
     font-size: 81px;
 }
 
+.pagination{
+    padding: 50px 0;
+}
+
+.pagination {
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.pagination a,
+.pagination span {
+  padding: 10px;
+  border: 1px solid #d2d2d2;
+  color: #000;
+}
+
+.pagination a:hover,
+.pagination span:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.pagination .current {
+  background-color: #d7af60;
+  color: #fff;
+}
+
+
 @-webkit-keyframes fadeInDown {
     from {
         opacity: 0;

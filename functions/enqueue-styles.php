@@ -59,7 +59,7 @@ function enqueue_styles() {
 		wp_enqueue_style( 'adatex-page-contact' );
 	}
 
-	if ( is_category() ) {
+	if ( is_category() || is_home() || is_tag() ) {
 		wp_enqueue_style( 'adatex-archive-category' );
 	}
 
