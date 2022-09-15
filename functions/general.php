@@ -139,7 +139,7 @@ function is_post_type($type){
 }
 
 add_action( 'pre_get_posts', 'my_change_sort_order'); 
-    function my_change_sort_order($query){
+    function my_change_sort_order($que){
         if(is_archive()):
           $que->set( 'order', 'ASC' );
 		   $que->set( 'orderby', 'menu_order' );
