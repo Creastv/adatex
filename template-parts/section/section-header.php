@@ -10,7 +10,7 @@
                     elseif (is_singular('galleries') ) : 
                         _e( 'Zrealizowane inwestycje', 'cr' );
                     elseif (is_404() ) :
-                        _e( '', 'cr' );
+                        _e( '404', 'cr' );
                     elseif ( is_tag() ) :
                         single_tag_title();
                     elseif ( is_author() ) :

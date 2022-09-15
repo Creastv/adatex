@@ -550,6 +550,15 @@ body.open {
     background-size: 100% 100%;
 }
 
+
+#error{
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+#error h1{
+    font-size: 81px;
+}
+
 @-webkit-keyframes fadeInDown {
     from {
         opacity: 0;
