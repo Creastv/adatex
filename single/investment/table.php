@@ -109,8 +109,6 @@ $args = array(
                             <td class="sorting"><?php echo get_field( 'sold_status' ) == "0" ? 'wolne' : 'sprzedane'; ?></td>
                             <td class="sorting"><?php echo get_field( 'price' ) ? get_field( 'price' ) . ' zł' : '---'; ?></td>
                             <td><?php echo get_field( 'sold_status' ) == "0" && get_field( 'card_link' ) ? '<a data-fancybox data-type="pdf" href="' . get_field( 'card_link' )['url'] . '">Pobierz PDF</a>' : '---'; ?></td>
-                            <!-- <td><a data-fancybox="dialog" data-src="#dialog-content" href="#" class="btn">Zapytaj o
-                                    mieszkanie</a></td> -->
                             <td><a href="#" onclick="test(event, '<?php the_title(); ?>', '<?php echo get_field( 'name' ); ?>')"  class="btn btn-modal">Zapytaj o
                                     mieszkanie</a></td>        
                         </tr>
@@ -136,7 +134,7 @@ $args = array(
 
 <script>
     function test(event, inw, name) {
-        // event.preventDefault();
+        event.preventDefault();
         console.log(name, inw)
         document.querySelector('#modal-form-table').classList.add('open-modal');
         document.querySelector('.nr-lok').textContent = name;
