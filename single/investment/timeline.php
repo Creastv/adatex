@@ -5,10 +5,6 @@
         <div class="container">
             <div class="section-heading">
                 <i class="line"
-                   data-aos="fade-down"
-                   data-aos-delay="400"
-                   data-aos-duration="1000"
-                   data-aos-easing="ease-in-sine"
                 ></i>
                 <div>
                     <p class="title"><span>Sprawdź postępy w budowie</span> na osi czasu</p>
@@ -30,33 +26,30 @@
                     ?>
                     <div class="timeline t<?php echo $i; ?>">
                         <div class="timeline__progress"
-                             data-aos="fade-right"
-                             data-aos-delay="1600"
-                             data-aos-duration="1000"
                              style="width: <?php echo $result; ?>%"
                         ></div>
                         <div class="timeline__schema">
-                            <div class="timeline__stage stage-1 <?php echo $timeline['progress'] > 1 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="timeline__stage stage-1 <?php echo $timeline['progress'] > 1 ? 'is-active' : ''; ?>" >
                                 <div class="timeline__info">
                                     <p>Dokumentacja<br> budowy</p>
                                 </div>
                             </div>
-                            <div class="timeline__stage stage-2 <?php echo $timeline['progress'] > 2 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="timeline__stage stage-2 <?php echo $timeline['progress'] > 2 ? 'is-active' : ''; ?>" >
                                 <p>Rozpoczęcie<br> prac budowlanych</p>
                             </div>
-                            <div class="timeline__stage stage-3 <?php echo $timeline['progress'] > 3 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="timeline__stage stage-3 <?php echo $timeline['progress'] > 3 ? 'is-active' : ''; ?>">
                                 <p>Stan surowy<br> otwarty</p>
                             </div>
-                            <div class="timeline__stage stage-4 <?php echo $timeline['progress'] > 4 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="800">
+                            <div class="timeline__stage stage-4 <?php echo $timeline['progress'] > 4 ? 'is-active' : ''; ?>" >
                                 <p>Stan surowy<br> zamknięty</p>
                             </div>
-                            <div class="timeline__stage stage-5 <?php echo $timeline['progress'] > 5 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="1000">
+                            <div class="timeline__stage stage-5 <?php echo $timeline['progress'] > 5 ? 'is-active' : ''; ?>" >
                                 <p>Zamknięcie<br> prac na budowie</p>
                             </div>
-                            <div class="timeline__stage stage-6 <?php echo $timeline['progress'] > 6 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="1200">
+                            <div class="timeline__stage stage-6 <?php echo $timeline['progress'] > 6 ? 'is-active' : ''; ?>" >
                                 <p>Pozwolenie na<br> użytkowanie</p>
                             </div>
-                            <div class="timeline__stage stage-7 <?php echo $timeline['progress'] > 7 ? 'is-active' : ''; ?>" data-aos="zoom-in" data-aos-delay="1400">
+                            <div class="timeline__stage stage-7 <?php echo $timeline['progress'] > 7 ? 'is-active' : ''; ?>" >
                                 <p>Przekazywanie <br> kluczy</p>
                             </div>
                         </div>

@@ -137,3 +137,16 @@ function is_post_type($type){
         return true;
     return false;
 }
+
+add_action( 'pre_get_posts', 'ustom_query_vars'); 
+    function ustom_query_vars($que){
+    //    if ( get_post_type() == 'investment' ) {
+		// $que->set('post_parent', 0);
+           $que->set( 'order', 'ASC' );
+		   $que->set( 'orderby', 'menu_order' );
+	
+		   $que->set('post__not_in', array( -6249, -4600, -4094, -4590, -4600, -8002, -6246, -6245, -6244 ));
+		//    $que->set('category__not_in', array( 6249, 4094, 4590, 4600, 8002, 6246, 6245, 6244 ));
+	//    }  
+    };
+

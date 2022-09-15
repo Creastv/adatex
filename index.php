@@ -4,7 +4,9 @@
 <div id="page-content" class="section">
     <div class="container">
         <div class="row">
-            <?php if ( have_posts() ) : ?>
+            <?php 
+ 
+            if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                 <?php if(is_post_type('investment') || is_post_type('galleries')) { ?>
                     <div class="col-md-6 item item-inw">
