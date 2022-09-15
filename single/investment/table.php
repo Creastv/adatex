@@ -39,7 +39,7 @@ $args = array(
                        data-aos-duration="1000"
                        data-aos-easing="ease-in-sine"
                     ></i>
-                    <p class="title"><span>Filtrowanie</span> mieszkań</p>
+                    <p class="title oo"><span>Filtrowanie</span> mieszkań</p>
                 </div>
                 <div class="filters">
 					<?php if ( ! empty( $filter['rooms'] ) ): ?>
@@ -108,8 +108,10 @@ $args = array(
                             <td class="sorting"><?php echo get_field( 'sold_status' ) == "0" ? 'wolne' : 'sprzedane'; ?></td>
                             <td class="sorting"><?php echo get_field( 'price' ) ? get_field( 'price' ) . ' zł' : '---'; ?></td>
                             <td><?php echo get_field( 'sold_status' ) == "0" && get_field( 'card_link' ) ? '<a data-fancybox data-type="pdf" href="' . get_field( 'card_link' )['url'] . '">Pobierz PDF</a>' : '---'; ?></td>
-                            <td><a data-fancybox="dialog" data-src="#dialog-content" href="#" class="btn">Zapytaj o
-                                    mieszkanie</a></td>
+                            <!-- <td><a data-fancybox="dialog" data-src="#dialog-content" href="#" class="btn">Zapytaj o
+                                    mieszkanie</a></td> -->
+                            <td><a href="#" data-inv="<?php echo $relation->name; ?>" data-name="<?php echo get_field( 'name' ); ?>" class="btn btn-modal">Zapytaj o
+                                    mieszkanie</a></td>        
                         </tr>
 					<?php endwhile;
 					wp_reset_query(); ?>
@@ -119,7 +121,15 @@ $args = array(
         </div>
     </div>
 
-    <div id="dialog-content" style="display:none;max-width:500px;">
-        <h2>Testowy modal</h2>
+    <div id="modal-form-table" class="modal-form-table  js">
+        <div class="bg"></div>
+        <div class="content">
+        <i class="close-modal js">x</i>
+        <h2>Nr. Lokalu: <b class="nr-lok"></b></h2>
+        <p class="nazwa-inw"></p>
+        <div class="form">
+            <?php echo do_shortcode('[contact-form-7 id="13518" title="Formularz - modal table"]'); ?>
+        </div>
     </div>
 <?php endif; ?>
+
