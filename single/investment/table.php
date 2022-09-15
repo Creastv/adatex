@@ -109,7 +109,7 @@ $args = array(
                             <td class="sorting"><?php echo get_field( 'sold_status' ) == "0" ? 'wolne' : 'sprzedane'; ?></td>
                             <td class="sorting"><?php echo get_field( 'price' ) ? get_field( 'price' ) . ' zł' : '---'; ?></td>
                             <td><?php echo get_field( 'sold_status' ) == "0" && get_field( 'card_link' ) ? '<a data-fancybox data-type="pdf" href="' . get_field( 'card_link' )['url'] . '">Pobierz PDF</a>' : '---'; ?></td>
-                            <td><a href="#" onclick="test(event, '<?php the_title(); ?>', '<?php echo get_field( 'name' ); ?>')"  class="btn btn-modal">Zapytaj o
+                            <td><a href="#" onclick="test(event, '<?php echo get_field( 'name' ); ?>')"  class="btn btn-modal">Zapytaj o
                                     mieszkanie</a></td>        
                         </tr>
 					<?php endwhile;
@@ -133,12 +133,12 @@ $args = array(
 <?php endif; ?>
 
 <script>
-    function test(event, inw, name) {
+    function test(event, name) {
+        let inw = '<?php echo $relation->name; ?>'
         event.preventDefault();
-        console.log(name, inw)
         document.querySelector('#modal-form-table').classList.add('open-modal');
         document.querySelector('.nr-lok').textContent = name;
-        document.querySelector('.nazwa-inw').textContent = inw;
+        document.querySelector('.nazwa-inw').textContent = inw ;
         document.querySelector('[name="nazwa-lokalu"]').value = name;
         document.querySelector('[name="nazwa-inwestycji"]').value = inw;
 
