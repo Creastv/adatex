@@ -61,7 +61,7 @@ function enqueue_scripts() {
 		wp_enqueue_script( 'adatex-component-rwd-image-maps' );
 		wp_enqueue_script( 'adatex-component-rwd-range-slider' );
 		wp_add_inline_script( 'adatex-component-maphilight', 'jQuery(document).ready(function(){jQuery(\'#InvestmentMap\').maphilight();jQuery(\'img[usemap]\').rwdImageMaps();});' );
-		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main-").owlCarousel({
+		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main").owlCarousel({
 			loop:!0,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!0,autoplayTimeout:8e3,autoplayHoverPause:!0,
 			nav:!0,
 			navContainer: ".wraper-nav",
