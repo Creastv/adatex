@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-
+var oldStart = 0;
     var $range = $(".flat_area_range"),
         $from = $(".min-from"),
         $to = $(".min-to"),
@@ -53,6 +53,13 @@ jQuery(document).ready(function ($) {
 
         language: {
             'url': '//cdn.datatables.net/plug-ins/1.10.13/i18n/Polish.json',
+        },
+         fnDrawCallback: function (o) {
+        if (o._iDisplayStart != oldStart) {
+            var targetOffset = jQuery("#table").offset().top;
+            jQuery("html,body").animate({ scrollTop: targetOffset - 100 }, 500);
+            oldStart = o._iDisplayStart;
+        }
         },
         // "bStateSave": true,
         // "stateSave": true,
