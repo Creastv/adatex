@@ -140,12 +140,12 @@ function is_post_type($type){
 
 add_action( 'pre_get_posts', 'my_change_sort_order'); 
     function my_change_sort_order($que){
-        if(is_archive()):
+        if ( !is_admin() && $que->is_main_query() ) {
           $que->set( 'order', 'ASC' );
 		   $que->set( 'orderby', 'menu_order' );
 	
 		   $que->set('post__not_in', array( -6249, -6243, -4094, -4590, -4600, -8002, -6246, -6245, -6244 ));
-        endif;    
+		}    
     };
 
 // add_action( 'pre_get_posts', 'custom_query_vars' );
