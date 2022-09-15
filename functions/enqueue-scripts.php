@@ -27,7 +27,12 @@ function enqueue_scripts() {
 
 	if ( is_page( 2 ) ) {
 		wp_enqueue_script( 'adatex-component-carousel' );
-		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main").owlCarousel({loop:!1,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!0,autoplayTimeout:8e3,autoplayHoverPause:!0,nav:!1,dotsContainer:".slider-main-nav span"})});' );
+		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main").owlCarousel({loop:!0,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!0,autoplayTimeout:8e3,autoplayHoverPause:!0,
+			nav:!0,
+			navContainer: ".wraper-nav",
+			navText: [a(".left-nav"),a(".right-nav")],
+			dotsContainer:".slider-main-nav span"
+		})});' );
 		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-investment").owlCarousel({loop:!0,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!1,autoplayTimeout:8e3,autoplayHoverPause:!0,nav:!1,dotsContainer:".slider-investment-nav"})});' );
 		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-post").owlCarousel({
 			loop:!0,
@@ -56,7 +61,13 @@ function enqueue_scripts() {
 		wp_enqueue_script( 'adatex-component-rwd-image-maps' );
 		wp_enqueue_script( 'adatex-component-rwd-range-slider' );
 		wp_add_inline_script( 'adatex-component-maphilight', 'jQuery(document).ready(function(){jQuery(\'#InvestmentMap\').maphilight();jQuery(\'img[usemap]\').rwdImageMaps();});' );
-		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main").owlCarousel({loop:!1,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!0,autoplayTimeout:8e3,autoplayHoverPause:!0,nav:!1,dotsContainer:".slider-main-nav span"})});' );
+		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-main-").owlCarousel({
+			loop:!0,margin:0,items:1,dots:!0,dotsData:!0,autoplay:!0,autoplayTimeout:8e3,autoplayHoverPause:!0,
+			nav:!0,
+			navContainer: ".wraper-nav",
+			navText: [a(".left-nav"),a(".right-nav")],
+			dotsContainer:".slider-main-nav span"
+		})});' );
 		wp_add_inline_script( 'adatex-component-carousel', 'jQuery(document).ready(function(a){"use strict";a(".slider-investment").owlCarousel({
 			responsive : {
 				0 : {

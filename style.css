@@ -268,6 +268,51 @@ h6 {
     animation: heartbeat 3.5s infinite;
 }
 
+.slider-arrow-nav{
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    padding: 45px 30px 45px 50px;
+    width: 100%;
+}
+
+.slider-arrow-nav .wraper-nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.slider-arrow-nav .wraper-nav span{
+    color:#fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.slider-arrow-nav .wraper-nav span:hover{
+    opacity: 0.8;
+}
+.slider-arrow-nav .wraper-nav .owl-prev, .slider-arrow-nav .wraper-nav .owl-next{
+    background: none!important;
+    border:none!important
+}
+
+.slider-arrow-nav .got{
+    width: 2px;
+    height: 2px;
+    background-color: #BD903F;
+    border-radius:100%;
+        padding: 4px!important;
+}
+@media (max-width: 768px) {
+  /* slider-nav */
+    .slider-arrow-nav{
+        bottom: 90px;
+        padding: 15px;
+    }
+    .slider-arrow-nav .wraper-nav{
+        justify-content: center;
+    }
+}
 #header {
     position: fixed;
     top: 0;

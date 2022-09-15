@@ -2,7 +2,7 @@
 
 <?php if ( ! empty( $slides ) ): ?>
     <div class="section section-slider">
-        <div class="slider-main owl-carousel">
+        <div class="slider-main slider-main-home owl-carousel">
 			<?php $i = 1;
 			foreach ( $slides as $slide ): ?>
                 <div class="slide"
@@ -49,6 +49,19 @@
         </div>
         <div class="slider-main-nav">
             <span></span>
+        </div>
+         <div class="slider-arrow-nav">
+            <div class="container">
+                <div class="wraper-nav">
+                    <span class="left-nav"> 
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/left-arrow.png" >
+                    </span>
+                    <span class="got"></span>
+                    <span class="right-nav">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/right-arrow.png" >
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 <?php endif; ?>

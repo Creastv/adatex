@@ -841,6 +841,22 @@
     color: red;
 }
 
+.content-slider-inv{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    top: 110px;
+    left: 0;
+    padding: 45px 30px 45px 50px;
+}
+.content-slider-inv .section-slider__details{
+    padding-left: 50px;
+}
+.content-slider-inv .section-slider__details p{
+    color:#fff;
+}
+
+
 @media (max-width: 1300px) {
 
     .section-about__attributes .value{
@@ -885,14 +901,26 @@
 
 }
 @media (max-width: 996px) {
+    .content-slider-inv .section-slider__details{
+        padding-left: 80px;
+    }
+    .content-slider-inv{
+        padding: 15px;
+    }
     .section-table .section-heading{
         flex-wrap: wrap;
+    }
+    .single-investment #header .header__logo{
+        padding-left: 80px;
     }
 }
 @media (max-width: 768px) {
     .slider-main-nav{
         /* display: none; */
             width: 40px!important;
+    }
+    .content-slider-inv .section-slider__details{
+        padding-left: 30px;
     }
 
     .single-investment #header .header__logo{
@@ -909,6 +937,7 @@
     }
     .section-slider__details .btn{
         font-size: 14px;
+        margin-top: 20px;
     }
     .section-about__finder{
         font-size: 31px!important;
@@ -1028,6 +1057,9 @@
     .section-location__points p {
         font-size: 10px;
     }
+
+
+  
 }
 
 /* @media (max-width: 568px) {} */
