@@ -47,7 +47,7 @@ $posts = get_posts( $args );
             </div>
         </div>
     </div>
-    <div class="section-investment__panel right">
+    <div id="inwestment-panel" class="section-investment__panel right ">
         <div class="slider-investment owl-carousel">
 			<?php
 			foreach ( $posts as $post ):
@@ -81,3 +81,19 @@ $posts = get_posts( $args );
         </div>
     </div>
 </div>
+
+
+<script>
+    setTimeout(function () {
+
+    const buttonsTab = document.querySelectorAll('.slider-investment-nav button');
+    for(let i = 0; i < buttonsTab.length; i++){
+        console.log(buttonsTab[i]);
+        buttonsTab[i].addEventListener('click', function(){
+            document.querySelector('.right').scrollIntoView({
+               behavior: 'smooth'
+            });
+        });
+    }
+    }, 200);
+</script>

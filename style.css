@@ -270,7 +270,7 @@ h6 {
 
 .slider-arrow-nav{
     position: absolute;
-    z-index: 9999;
+    z-index: 99;
     bottom: 0;
     right: 0;
     padding: 45px 30px 45px 50px;

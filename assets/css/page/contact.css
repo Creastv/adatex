@@ -192,7 +192,10 @@
 .page-contact__team-featured {
     position: relative;
 }
-
+.page-contact__team-featured img {
+    width: 100%;
+    height: auto;
+}
 .page-contact__team-featured span {
     font-size: 12px;
     font-weight: 700;
@@ -300,6 +303,10 @@
 }
 
 @media (max-width: 768px) {
+    .page-contact__team-state .state{
+        width: 100%;
+        margin-bottom: 10px;
+    }
     .page-contact__team-state .section-content > div{
         flex-wrap: wrap;
     }
