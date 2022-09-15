@@ -879,6 +879,16 @@
 
 }
 @media (max-width: 1200px) {
+      .section-flats__finder{
+        position: inherit;
+        padding-left: 15px;
+    }
+    .section-flats .tooltip-content{
+        position: inherit;
+        width: 100%;
+        left: 0;
+        height: inherit;
+    }
     .section-table .section-heading .heading{
         padding-right: 50px;
     }
@@ -1059,7 +1069,17 @@
     }
 
 
-  
+    /* img maping */
+  .section-flats__finder{
+    position: inherit;
+    padding-left: 15px;
+  }
+  .section-flats .tooltip-content{
+    position: inherit;
+    width: 100%;
+    left: 0;
+    height: inherit;
+  }
 }
 
 /* @media (max-width: 568px) {} */
