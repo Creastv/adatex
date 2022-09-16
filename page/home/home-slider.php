@@ -36,7 +36,7 @@
                                     </div>
                                 </div>
                                 <div class="slide__flats">
-                                    <a href="#" title="#">
+                                    <a href="/inwestycje/" title="Inwestycje Adatex">
                                         <i></i>
                                         <span>Kliknij<br> i znajdź <strong>mieszkanie</strong></span>
                                     </a>
