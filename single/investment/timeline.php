@@ -8,14 +8,16 @@
                 ></i>
                 <div>
                     <p class="title"><span>Sprawdź postępy w budowie</span> na osi czasu</p>
-                    <?php if($timelines['etap']) { ?>
+                    <?php $i = 1;
+                    if($i == 1 || $i == 2) { ?>
                     <select id="select-step" name="select-step">
-						<?php $i = 1;
-						foreach ( $timelines as $timeline ): ?>
+						
+						<?php foreach ( $timelines as $timeline ): ?>
                             <option value="<?php echo $i; ?>"><?php echo $timeline['etap']; ?></option>
 							<?php $i ++; endforeach; ?>
                     </select>
                     <?php } ?>
+                  
                 </div>
             </div>
             <div class="section-content">
