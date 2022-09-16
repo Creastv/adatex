@@ -31,7 +31,7 @@
                     </div>
 
                 <?php } else { ?>
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item item-res">
                         <div class="post__panel">
                             <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                                 <div class="post__background"
