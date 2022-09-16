@@ -145,6 +145,6 @@ function my_change_sort_order($que){
 		$que->set( 'orderby', 'menu_order' );
 
 		$que->set('post_parent', 0);
-		$que->set('post__not_in', array( -4581, -13554 ));
+		// $que->set('post__not_in', array( -4581, -13554 ));
 	}    
 };
