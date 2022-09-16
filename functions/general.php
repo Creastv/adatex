@@ -139,32 +139,12 @@ function is_post_type($type){
 }
 
 add_action( 'pre_get_posts', 'my_change_sort_order'); 
-    function my_change_sort_order($que){
-        if ( !is_admin() && $que->is_main_query() && is_archive() ) {
-          $que->set( 'order', 'ASC' );
-		   $que->set( 'orderby', 'menu_order' );
+function my_change_sort_order($que){
+    if ( !is_admin() && $que->is_main_query() && is_archive() ) {
+        $que->set( 'order', 'ASC' );
+		$que->set( 'orderby', 'menu_order' );
 
-		   $que->set('post_parent', 0);
-		   $que->set('post__not_in', array( -4581 ));
-		}    
-    };
-
-// add_action( 'pre_get_posts', 'custom_query_vars' );
-// function custom_query_vars( $query ) {
-//   if ( !is_admin() && $query->is_main_query() ) {
-//     if ( get_post_type() == 'portfolio' ) {
-//       $query->set( 'posts_per_page', 12 );
-//     }
-//     if ( get_post_type() == 'investment' ) {
-//       $query->set( 'posts_per_page',1 );
-//       $query->set( 'orderby', 'menu_order' );
-//       $query->set( 'order', 'ASC' );
-//     }
-//     if ( get_post_type() == 'resource' ) {
-//       $query->set( 'posts_per_page', -1 );
-//       $query->set( 'orderby', 'title' );
-//       $query->set( 'order', 'ASC' );
-//     }
-//   }
-//   return $query;
-// }
+		$que->set('post_parent', 0);
+		$que->set('post__not_in', array( -4581, -12554 ));
+	}    
+};
