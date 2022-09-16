@@ -548,10 +548,11 @@
 
 .section-table .filters {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 25px;
     position: relative;
-    top: 40px;
+    align-items: center;
+    /* top: 40px; */
 }
 
 .section-table .filters select {
@@ -563,13 +564,16 @@
     border-style: solid;
     border-color: #c09056;
 }
-
+.section-table .section-heading .heading{
+        padding-right: 50px;
+    }
 .section-table .filter-range {
     margin: 35px 10px 0 10px;
 }
 
 .section-table .irs {
-    width: 555px;
+   width: 550px;
+    max-width: 100%;
 }
 
 .section-table .irs--flat:before,
@@ -781,6 +785,9 @@
 .has-slider .header__logo{
     padding-left: 80px;
 }
+  .has-slider.sticky .header__logo{
+        padding-left: 0px;
+    }
 
 .section-slider .slide{
     height: 100vh;
@@ -850,12 +857,17 @@
     padding: 45px 30px 45px 50px;
 }
 .content-slider-inv .section-slider__details{
-    padding-left: 50px;
+    padding-left: 75px;
 }
 .content-slider-inv .section-slider__details p{
     color:#fff;
 }
-
+@media (max-width: 1400px) {
+    .section-table .irs {
+        width: 400px;
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 1300px) {
 
@@ -908,11 +920,17 @@
     .section-table .filters select{
         width: 100%;
     }
+    .content-slider-inv .section-slider__details{
+        padding-left: 20px;
+    }
+       .has-slider .header__logo{
+        padding-left: 50px;
+    }
 
 }
 @media (max-width: 996px) {
     .content-slider-inv .section-slider__details{
-        padding-left: 80px;
+        padding-left: 50px;
     }
     .content-slider-inv{
         padding: 15px;
@@ -921,9 +939,15 @@
         flex-wrap: wrap;
     }
     .has-slider .header__logo{
-        padding-left: 80px;
+        padding-left: 50px;
     }
 }
+@media (max-width: 996px) {
+    .header__navigation--contact a{
+        font-size: 12px;
+    }
+}
+
 @media (max-width: 768px) {
     .slider-main-nav{
         /* display: none; */
@@ -936,9 +960,7 @@
     .has-slider  .header__logo{
         padding-left: 30px;
     }
-     .has-slider.sticky .header__logo{
-        padding-left: 0px;
-    }
+   
      .section-slider .slide{
         padding-left: 60px;
     }
@@ -979,6 +1001,8 @@
     }
     .section-table .filters{
         width: 100%;
+        flex-wrap: wrap;
+        margin-top: 30px;
     }
     .section-heading.has-line .filter {
         width: 100%;

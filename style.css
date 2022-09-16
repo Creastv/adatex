@@ -468,6 +468,18 @@ h6 {
     padding: 15px 30px 15px 30px;
 }
 
+#page-header i.line{
+content: "";
+    width: 100%;
+    max-width: 15vw;
+    height: 1px;
+    background: #c09056;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    z-index: 997;
+}
+
 .logged-in #header,
 .logged-ing #header.sticky {
     top: 32px;
@@ -705,6 +717,7 @@ body.open {
 }
 
 @media only screen and (max-width: 992px){
+   
     .header__navigation{
         gap:0px;
     }
@@ -747,7 +760,7 @@ body.open {
         max-width: 100%;
     }
     #page-header {
-        height: 200px;
+        height: 260px;
     }
 }
 @media (max-width: 576px) {
@@ -758,6 +771,9 @@ body.open {
     .header__navigation--address{
         padding-left: 20px;
         border-top: 1px solid #d6ae5e;
+    }
+    #page-header #title-page h1{
+        font-size: 31px;
     }
 }
 /* Footer */

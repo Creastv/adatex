@@ -20,7 +20,11 @@ $posts = get_posts( $args );
 				$year = get_field( 'year', $post->ID );
 				?>
                 <li <?php echo $post->ID == $queried_object->ID ? ' class="active"' : ''; ?>>
+                <?php if ( wp_is_mobile() ) { ?>
+                    <a href="<?php echo get_the_permalink( $post->ID ); ?>/#inwestycja" title="<?php echo $post->post_title; ?>">
+                <?php } else { ?>
                     <a href="<?php echo get_the_permalink( $post->ID ); ?>" title="<?php echo $post->post_title; ?>">
+                <?php } ?>
                         <p class="title"><?php echo $post->post_title; ?></p>
                         <p class="address"><?php echo $address ?></p>
                         <p class="year">rok budowy: <strong><?php echo $year ?: '---' ?></strong></p>

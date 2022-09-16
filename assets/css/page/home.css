@@ -450,7 +450,11 @@
 }
 
 .home #header .header__logo{
-    padding-left: 50px;
+    padding-left: 80px;
+}
+
+.home #header.sticky .header__logo{
+    padding-left: 0px;
 }
 
 @media (max-width: 1400px) {
@@ -504,7 +508,16 @@
         margin-top: 20px;
     }
 }
-
+@media (max-width: 1200px) {
+    .home #header .header__logo {
+        padding-left: 50px;
+    }
+}
+@media (max-width: 996px) {
+    .header__navigation--contact a{
+        font-size: 12px;
+    }
+}
 
 
 @media (max-width: 768px) {

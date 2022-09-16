@@ -118,3 +118,30 @@
 .single-gallery .btn {
     width: 100%;
 }
+
+.single-galleries aside .section-heading .title {
+    font-size: 36px;
+    margin-right: 70px;
+    text-align: right;
+}
+@media (max-width: 1200px) {
+
+    .single-gallery #page-content aside ul{
+        padding-right: 0;
+    }
+    .single-galleries aside .section-heading .title {
+        font-size: 36px;
+        margin-right: 0px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .single-gallery aside li {
+        text-align: left;
+    }
+    .single-galleries aside .section-heading .title {
+        font-size: 24px;
+        text-align: left;
+    }
+}

@@ -11,8 +11,8 @@
                 <div class="footer__design">
                     <p>Projekt i realizacja:</p>
                     <a href="https://regalestate.pl/" title="RegalEstate" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/regal-estate-logo.png"
-                             alt="Regal Estate" width="68" height="23">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-regalestate.png"
+                             alt="Regal Estate" width="100" height="34">
                     </a>
                 </div>
             </div>

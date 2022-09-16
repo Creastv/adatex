@@ -1,4 +1,5 @@
 <div id="page-header" style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/category-bg.jpg);">
+<i class="line aos-init aos-animate" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400"></i>
 <div id="title-page">
     <div class="container">
         <div class="row">

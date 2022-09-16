@@ -82,6 +82,7 @@ border:none!important;
 
 .item-inw .post__background{
    position: relative;
+   opacity: 1;
 
 }
 
@@ -153,5 +154,12 @@ border:none!important;
     }
     .category.section .item{
         margin-bottom: 30px;
+    }
+    .item-inw .post__background{
+        height: 350px;
+        opacity: 1;
+    }
+    .item-inw .post__background .post__heading .title-wraper{
+        padding: 10px;
     }
 }

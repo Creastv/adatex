@@ -99,8 +99,14 @@
 .section-slider .owl-dot.active:last-of-type button:after {
     display: none;
 }
-@media (max-height: 700px) {
-    
+
+@media (max-width: 1200px) {
+    .section-slider .slider-main-nav{
+        width: 55px;
+    }
+    .section-slider .slide{
+        padding-left: 75px;
+    }
 }
 @media (max-width: 576px) {
     
