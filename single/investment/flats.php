@@ -37,7 +37,7 @@
 					$fill_color = "";
 					$fill_opacity = "";
 					$status = "";
-
+                if ( is_page_template( 'investment.php' ) ) {
 					switch ( $c['status'] ) {
 						case 0;
 							$stroke_color = "005607";
@@ -56,6 +56,27 @@
 							$fill_opacity = "0.6";
 							break;
 					}
+				} else {
+						switch ( $c['status'] ) {
+							case 0;
+								$stroke_color = "ddbd7c";
+								$fill_color   = "000000";
+								$fill_opacity = "0.6";
+
+								break;
+							case 1;
+								$stroke_color = "ff0000";
+								$fill_color   = "ff0000";
+								$fill_opacity = "0.4";
+								break;
+							case 2;
+								$stroke_color = "d5d5d5";
+								$fill_color   = "9a9a9a";
+								$fill_opacity = "0.6";
+								break;
+						}
+
+				}
 
 					switch ( $c['status'] ) {
 						case 0;
