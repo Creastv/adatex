@@ -40,8 +40,8 @@
 
 					switch ( $c['status'] ) {
 						case 0;
-							$stroke_color = "ddbd7c";
-							$fill_color   = "000000";
+							$stroke_color = "005607";
+							$fill_color   = "009b0c";
 							$fill_opacity = "0.6";
 
 							break;
