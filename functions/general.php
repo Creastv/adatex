@@ -143,8 +143,9 @@ add_action( 'pre_get_posts', 'my_change_sort_order');
         if ( !is_admin() && $que->is_main_query() && is_archive() ) {
           $que->set( 'order', 'ASC' );
 		   $que->set( 'orderby', 'menu_order' );
-	
-		   $que->set('post__not_in', array( -13542, -6249, -6243, -4094, -4590, -4600, -8002, -6246, -6245, -6244 ));
+
+		   $que->set('post_parent', 0);
+		//    $que->set('post__not_in', array( -13542, -6249, -6243, -4094, -4590, -4600, -8002, -6246, -6245, -6244 ));
 		}    
     };
 
