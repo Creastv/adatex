@@ -121,7 +121,7 @@ var oldStart = 0;
 
         tooltip.css("display", "flex");
 
-        if (floor > 0 && floor < 7) {
+        if (floor > 0 && floor < 10) {
             tooltip.html('<div class="floor-item floor">' + floor + '</div><span>piętro</span>');
         } else if (floor === "Parter") {
             tooltip.html('<div class="floor-item parter">Parter</div>');
