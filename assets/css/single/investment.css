@@ -529,8 +529,9 @@
     margin-top: -15px;
 }
 
-.section-flats .tooltip-content span,
-.section-flats .tooltip-content .other {
+.section-flats .tooltip-content span
+/* .section-flats .tooltip-content .other  */
+{
     font-size: 20px;
     margin-top: 15px;
 }
