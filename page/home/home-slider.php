@@ -36,9 +36,9 @@
                                     </div>
                                 </div>
                                 <div class="slide__flats">
-                                    <a href="/inwestycje/" title="Inwestycje Adatex">
+                                    <a href="<?php echo $slide['button']['url']; ?>" title="Inwestycje Adatex">
                                         <i></i>
-                                        <span>Kliknij<br> i znajdź <strong>mieszkanie</strong></span>
+                                        <span>Kliknij<br> i znajdź <strong><?php if($slide['tresc_szukaj_domumieszkania']) { echo $slide['tresc_szukaj_domumieszkania']; } else { echo "mieszkanie"; }; ?></strong></span>
                                     </a>
                                 </div>
                                 
