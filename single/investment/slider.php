@@ -21,11 +21,11 @@ $slides  = get_field( 'slides' );
                 <div>
                     <h2 class="title"><?php echo $details['name']; ?></h2>
                     <p><?php echo $details['address']; ?></p>
-                    <?php if($details['content']) { ?>
+                    <!-- <?php if($details['content']) { ?>
                     <div class="desc">
                        <?php echo $details['content']; ?>
                     </div>
-                    <?php } ?>
+                    <?php } ?> -->
                 </div>
                 <div>
                     <?php if($details['link_buttona']) { ?>
