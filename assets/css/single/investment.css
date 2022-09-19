@@ -525,7 +525,8 @@
     text-align: center;
 }
 
-.section-flats .tooltip-content .floor-item.floor {
+.section-flats .tooltip-content .floor-item.floor,
+.section-flats .tooltip-content .other {
     margin-top: -15px;
 }
 
