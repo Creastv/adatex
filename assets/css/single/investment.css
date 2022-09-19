@@ -525,14 +525,12 @@
     text-align: center;
 }
 
-.section-flats .tooltip-content .floor-item.floor,
-.section-flats .tooltip-content .other {
+.section-flats .tooltip-content .floor-item.floor {
     margin-top: -15px;
 }
 
-.section-flats .tooltip-content span
-/* .section-flats .tooltip-content .other  */
-{
+.section-flats .tooltip-content span,
+.section-flats .tooltip-content .other {
     font-size: 20px;
     margin-top: 15px;
 }
