@@ -41,6 +41,7 @@
                                         <span>Kliknij<br> i znajdź <strong>mieszkanie</strong></span>
                                     </a>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

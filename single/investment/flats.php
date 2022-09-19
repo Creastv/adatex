@@ -16,8 +16,16 @@
                         <p class="title"><?php echo $flats['title']; ?></p>
 						<?php endif; ?>
 						<?php if ( ! is_page_template( 'archive-investment.php' ) ): ?>
-							<a href="#flats-table" title="kliknij, aby przejść do tabeli" class="btn">
+							<?php if($flats['link_buttona']) { ?>
+							    <a href="<?php echo $flats['link_buttona']; ?>" title="kliknij, aby przejść do tabeli" class="btn">
+							<?php } else { ?>
+								<a href="#flats-table" title="kliknij, aby przejść do tabeli" class="btn">
+							<?php } ?>
+								<?php if($flats['tresc_buttona']) { ?>
+								<?php echo $flats['tresc_buttona'];?>
+								<?php } else { ?>
 								kliknij, aby przejść do tabeli
+								<?php } ?>
 							</a>
 						<?php endif; ?>
 					

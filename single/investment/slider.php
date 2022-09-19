@@ -21,9 +21,24 @@ $slides  = get_field( 'slides' );
                 <div>
                     <h2 class="title"><?php echo $details['name']; ?></h2>
                     <p><?php echo $details['address']; ?></p>
+                    <?php if($details['content']) { ?>
+                    <div class="desc">
+                       <?php echo $details['content']; ?>
+                    </div>
+                    <?php } ?>
                 </div>
                 <div>
-                    <a href="#flats-table" title="kliknij i znajdź mieszkanie" class="btn">kliknij i znajdź mieszkanie</a>
+                    <?php if($details['link_buttona']) { ?>
+                    <a href="<?php echo $details['link_buttona']; ?>" title="kliknij i znajdź mieszkanie" class="btn">
+                    <?php } else { ?>
+                    <a href="#flats-table" title="kliknij i znajdź mieszkanie" class="btn">
+                    <?php } ?>
+                        <?php if($details['tresc_button']) { ?>
+                        <?php echo $details['tresc_button'];?>
+                        <?php } else { ?>
+                        kliknij i znajdź mieszkanie
+                        <?php } ?>
+                    </a>
                 </div>
            </div>
            </div>
