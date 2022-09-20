@@ -7,12 +7,7 @@ $editor = get_field( 'editor' );
     <div class="section section-seo">
         <div class="container">
             <div class="section-heading has-line">
-                <i class="line"
-                   data-aos="fade-down"
-                   data-aos-delay="400"
-                   data-aos-duration="1000"
-                   data-aos-easing="ease-in-sine"
-                ></i>
+                <i class="line" ></i>
                 <h2 class="title">
                     <?php echo $title; ?>
                 </h2>

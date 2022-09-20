@@ -4,12 +4,7 @@
     <div class="section section-gallery">
         <div class="container">
             <div class="section-heading">
-                <i class="line"
-                   data-aos="fade-down"
-                   data-aos-delay="400"
-                   data-aos-duration="1000"
-                   data-aos-easing="ease-in-sine"
-                ></i>
+                <i class="line"  ></i>
                 <p class="title">Galeria</p>
             </div>
         </div>
