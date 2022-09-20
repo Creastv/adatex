@@ -11,7 +11,7 @@ $filter_floor = explode( ';', $filter['floor'] );
 $filter_area  = explode( ';', $filter['area'] );
 
 $args = array(
-	'post_type'      => 'flats',
+	'post_type'      => array('flats', 'flat-no-cont', 'ready-flats'),
 	'posts_per_page' => - 1,
 	'paged'          => 1,
 	'orderby'        => 'id',

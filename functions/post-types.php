@@ -1,6 +1,6 @@
 <?php
 
-// CPT: Flats
+// CPT: Mieszkania
 function cpt_flats() {
 	$labels = array(
 		'name'               => _x( 'Mieszkania', 'post type general name', 'adatex' ),
@@ -43,6 +43,91 @@ function cpt_flats() {
 
 add_action( 'init', 'cpt_flats' );
 
+// CPT: Mieszkania bez wkładu własnego
+function cpt_flat_no_cont() {
+	$labels = array(
+		'name'               => _x( 'Mieszkania bez wkładu własnego', 'post type general name', 'adatex' ),
+		'singular_name'      => _x( 'Mieszkania bez wkładu własnego', 'post type singular name', 'adatex' ),
+		'menu_name'          => _x( 'Mieszkania bez wkładu własnego', 'admin menu', 'adatex' ),
+		'name_admin_bar'     => _x( 'Mieszkania bez wkładu własnego', 'add new on admin bar', 'adatex' ),
+		'add_new'            => _x( 'Dodaj nowy', 'book', 'adatex' ),
+		'add_new_item'       => __( 'Dodaj nowy', 'adatex' ),
+		'new_item'           => __( 'Nowa stroną', 'adatex' ),
+		'edit_item'          => __( 'Edytuj stronę', 'adatex' ),
+		'view_item'          => __( 'Pokaż stronę', 'adatex' ),
+		'all_items'          => __( 'Wszystkie strony', 'adatex' ),
+		'search_items'       => __( 'Przeszukaj strony', 'adatex' ),
+		'parent_item_colon'  => __( 'Rodzic strony:', 'adatex' ),
+		'not_found'          => __( 'Nie znaleziono strony', 'adatex' ),
+		'not_found_in_trash' => __( 'Nie znaleziono strony w koszu', 'adatex' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'adatex' ),
+		'taxonomies'         => array( 'flats_tax' ),
+		'public'             => true,
+		'show_in_rest'       => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'mieszkanie-bez-wkladu' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => true,
+		'menu_position'      => null,
+		'menu_icon'          => 'dashicons-admin-home',
+		'supports'           => array( 'title', 'editor', 'thumbnail' )
+	);
+
+	register_post_type( 'flat-no-cont', $args );
+}
+add_action( 'init', 'cpt_flat_no_cont' );
+// // CPT: Gotowe mieszkania
+function cpt_ready_flats() {
+	$labels = array(
+		'name'               => _x( 'Gotowe mieszkania', 'post type general name', 'adatex' ),
+		'singular_name'      => _x( 'Gotowe mieszkania', 'post type singular name', 'adatex' ),
+		'menu_name'          => _x( 'Gotowe mieszkania', 'admin menu', 'adatex' ),
+		'name_admin_bar'     => _x( 'Gotowe mieszkania', 'add new on admin bar', 'adatex' ),
+		'add_new'            => _x( 'Dodaj nowy', 'book', 'adatex' ),
+		'add_new_item'       => __( 'Dodaj nowy', 'adatex' ),
+		'new_item'           => __( 'Nowa stroną', 'adatex' ),
+		'edit_item'          => __( 'Edytuj stronę', 'adatex' ),
+		'view_item'          => __( 'Pokaż stronę', 'adatex' ),
+		'all_items'          => __( 'Wszystkie strony', 'adatex' ),
+		'search_items'       => __( 'Przeszukaj strony', 'adatex' ),
+		'parent_item_colon'  => __( 'Rodzic strony:', 'adatex' ),
+		'not_found'          => __( 'Nie znaleziono strony', 'adatex' ),
+		'not_found_in_trash' => __( 'Nie znaleziono strony w koszu', 'adatex' )
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'description'        => __( 'Description.', 'adatex' ),
+		'taxonomies'         => array( 'flats_tax' ),
+		'public'             => false,
+		'show_in_rest'       => true,
+		'publicly_queryable' => false,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'gotowe-mieskania' ),
+		'capability_type'    => 'post',
+		'has_archive'        => false,
+		'hierarchical'       => true,
+		'menu_position'      => null,
+		'menu_icon'          => 'dashicons-admin-home',
+		'supports'           => array( 'title', 'editor', 'thumbnail' )
+	);
+
+	register_post_type( 'ready-flats', $args );
+}
+
+add_action( 'init', 'cpt_ready_flats' );
+
+
 function create_flats_tax() {
 	$labels = array(
 		'name'              => _x( 'Kategorie', 'taxonomy general name', 'textdomain' ),
@@ -67,7 +152,7 @@ function create_flats_tax() {
 		//'rewrite' => '',
 	);
 
-	register_taxonomy( 'flats_tax', array( 'flats' ), $args );
+	register_taxonomy( 'flats_tax', array( 'flats', 'flat-no-cont', 'ready-flats' ), $args );
 
 }
 
