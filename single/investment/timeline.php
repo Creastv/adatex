@@ -8,10 +8,10 @@
                 ></i>
                 <div>
                     <p class="title"><span>Sprawdź postępy w budowie</span> na osi czasu</p>
-                    <?php $i = 1;
-                    if($i == 1 || $i == 2) { ?>
+                    
+                    <?php $i = 1; ?>
+                    <?php  if(count($timelines) > '1') { ?>
                     <select id="select-step" name="select-step">
-						
 						<?php foreach ( $timelines as $timeline ): ?>
                             <option value="<?php echo $i; ?>"><?php echo $timeline['etap']; ?></option>
 							<?php $i ++; endforeach; ?>
